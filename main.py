@@ -17,8 +17,8 @@ def adding():
   while True:
 
     def info():
-      name_1 = input("\n\n\nEnter your first name: ").strip().title()
-      name_2_last = input("\nEnter your last name: ").strip().title()
+      name_1 = input("\n\n\nEnter your FIRST name ----> ").strip().title()
+      name_2_last = input("\nEnter your LAST name ----> ").strip().title()
       if f"{name_1} {name_2_last}" in people_list:
         print(red, "\nalready names are exiting!", white)
         info()
@@ -47,7 +47,8 @@ def adding():
               print()
               for i in people_list:
                 print(f"{i}\n")
-              print(green, "\n\nDone! all contact names were SAVED 😄👍\n\n", white)
+              print(green, "\n\nDone! all contact names were SAVED 😄👍\n\n",
+                    white)
               exit()
             elif ask == "no":
               os.system("clear")
